@@ -51,17 +51,6 @@ class MouseClick:
                         if abs(index_y - middle_y) < 20:
                             auto.click()
                             auto.sleep(1)
-
-                    if id == 4:
-                        thumb_x = (screen_width / frame_width) * x
-                        thumb_y = (screen_height / frame_height) * y
-
-                        if id == 5:
-                            fore_root_x = (screen_width / frame_width) * x
-                            fore_root_y = (screen_height / frame_height) * y
-
-                            if(thumb_y < fore_root_y):
-                                auto.scroll()
                                 
         cv2.imshow('Mouse', frame)
     
